@@ -4,10 +4,13 @@ import Profile from "./page/Profile"
 import SignUp from "./page/Signup"
 import SignIn from "./page/Signin"
 import About from "./page/About"
+import Header from './Component/Header'
 import React from "react"
 export default function App() {
   return (
     <BrowserRouter>
+    {/* {header} */}
+    <Header/>
       <Routes>
         <Route path="/" element ={<Home/>}/>
         <Route path="/profile" element ={<Profile/>}/>
